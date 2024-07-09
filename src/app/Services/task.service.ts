@@ -8,7 +8,7 @@ import {  catchError, of, switchMap, throwError } from 'rxjs';
   providedIn: 'root',
 })
 export class TaskService {
-  private apiUrl = 'https://localhost:7141/task/';
+  private apiUrl = 'https://localhost:5191/task/';
 
   constructor(private http: HttpClient) { }
 
