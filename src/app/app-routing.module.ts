@@ -26,9 +26,12 @@ import { CustomerProfileComponent } from './Components/customer-profile/customer
 import { ListDocumentComponent } from './Components/documens/list-document/list-document.component';
 import { AuthGuard } from './Guard/auth.guard';
 const routes: Routes = [
-  { path: 'customer', component: CustomersComponent, canActivate: [AuthGuard], data: { roles: [3, 2, 1] } },
-  { path: 'worker', component: WorkerComponentComponent, canActivate: [AuthGuard], data: { roles: [2, 1] } },
-  { path: 'admin', component: AdminComponentComponent, canActivate: [AuthGuard], data: { roles: [1] } },
+  // { path: 'customer', component: CustomersComponent, canActivate: [AuthGuard], data: { roles: [3, 2, 1] } },
+  // { path: 'worker', component: WorkerComponentComponent, canActivate: [AuthGuard], data: { roles: [2, 1] } },
+  // { path: 'admin', component: AdminComponentComponent, canActivate: [AuthGuard], data: { roles: [1] } },
+  { path: 'customer', component: CustomersComponent},
+  { path: 'worker', component: WorkerComponentComponent},
+  { path: 'admin', component: AdminComponentComponent},
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'edit', component: EditUserComponent },
